@@ -1,0 +1,5 @@
+1.vue-cli-service.js对npm run serve和npm run build指令进行了拦截，使得能够对单独的模块进行编译。
+如npm run serve web。
+但是如文件所示需要修改node_modules中的文件，文件路径：node_modules/@vue/cli-service/bin/vue-cli-service.js
+其做法是对命令进行了恢复，因为直接多个参数会报错。
+
